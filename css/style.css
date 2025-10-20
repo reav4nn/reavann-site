@@ -250,13 +250,18 @@ body {
   gap: 1em;
   flex-wrap: wrap;
 }
+.footer__social { 
+  display: flex;
+  align-items: center;
+  gap: .75em;
+}
 .footer__social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-light);
-  opacity: .75;
+  color: #e5e5e5;
+  opacity: .6;
   transition: opacity .2s var(--cubic-default);
-  margin-left: .6em;
 }
 .footer__social a:hover { opacity: 1; }
+.footer__social svg { width: 22px; height: 22px; display: block; }
