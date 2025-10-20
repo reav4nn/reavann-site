@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect www to apex with HTTPS
+RewriteCond %{HTTP_HOST} ^www\.reavann\.xyz$ [NC]
+RewriteRule ^(.*)$ https://reavann.xyz/$1 [R=301,L]
+
+# Enforce HTTPS on apex
+RewriteCond %{HTTP_HOST} ^reavann\.xyz$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://reavann.xyz/$1 [R=301,L]
