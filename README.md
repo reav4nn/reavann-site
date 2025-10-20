@@ -41,3 +41,7 @@ License & Usage
 - © 2025 Reavann — All Rights Reserved.
 - No reuse, copying, or redistribution without explicit permission from the owner.
 - Public deployment is allowed only for reavann.xyz by the owner.
+
+Attributions
+- Simple Icons (CC0 1.0) used for GitHub, Instagram, and Spotify brand marks.
+- Heroicons (MIT) used for the mail (envelope) icon.
