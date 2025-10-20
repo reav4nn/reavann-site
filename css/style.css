@@ -265,3 +265,6 @@ body {
 }
 .footer__social a:hover { opacity: 1; }
 .footer__social svg { width: 22px; height: 22px; display: block; }
+
+/* ---- Light anti-copy for images (non-invasive) ---- */
+img { -webkit-user-drag: none; user-select: none; }

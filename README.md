@@ -36,3 +36,8 @@ Deploy
 Future tweaks (optional)
 - Add Cloudflare Web Analytics if desired.
 - Form actions can use `mailto:` or a drop-in service like Formspree.
+
+License & Usage
+- © 2025 Reavann — All Rights Reserved.
+- No reuse, copying, or redistribution without explicit permission from the owner.
+- Public deployment is allowed only for reavann.xyz by the owner.
