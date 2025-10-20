@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
         body: formData
       });
       if (res.ok) {
-        status.textContent = 'Thanks! Your message has been sent.';
+        status.textContent = 'Message sent successfully ✅';
         form.reset();
       } else {
-        status.textContent = 'Oops! There was a problem sending your message.';
+        status.textContent = 'Failed to send message ❌ Please try again.';
       }
     } catch (err) {
-      status.textContent = 'Network error. Please try again later.';
+      status.textContent = 'Failed to send message ❌ Please try again.';
     }
   });
 });
