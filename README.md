@@ -1,4 +1,4 @@
-Project: Reavann Parallax Site (static)
+﻿Project: Reavann Parallax Site (static)
 
 Overview
 - Converted from PHP to a static site (HTML/CSS/JS) without changing the visual design, layout, or content.
@@ -21,7 +21,7 @@ Structure
 
 Notes
 - Index is fully static; no PHP required.
-- Scripts are loaded with `defer` for performance; order is important: GSAP → ScrollTrigger → Lenis → main.js.
+- Scripts are loaded with `defer` for performance; order is important: GSAP â†’ ScrollTrigger â†’ Lenis â†’ main.js.
 - Decorative parallax images use empty `alt` and `aria-hidden` to improve accessibility.
 
 Local preview
@@ -38,10 +38,11 @@ Future tweaks (optional)
 - Form actions can use `mailto:` or a drop-in service like Formspree.
 
 License & Usage
-- © 2025 Reavann — All Rights Reserved.
+- Â© 2025 Reavann â€” All Rights Reserved.
 - No reuse, copying, or redistribution without explicit permission from the owner.
 - Public deployment is allowed only for reavann.xyz by the owner.
 
 Attributions
 - Simple Icons (CC0 1.0) used for GitHub, Instagram, and Spotify brand marks.
 - Heroicons (MIT) used for the mail (envelope) icon.
+
