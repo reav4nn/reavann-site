@@ -78,3 +78,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Extend fade-in to contact and footer sections
+document.addEventListener("DOMContentLoaded", () => {
+  const targets = [
+    '#contact .contact__inner',
+    '.site-footer .footer__inner',
+    '.section'
+  ];
+  targets.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((el) => {
+      gsap.fromTo(el, { opacity: 0, y: 40 }, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 80%',
+          toggleActions: 'play none none reverse'
+        }
+      });
+    });
+  });
+});
