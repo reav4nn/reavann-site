@@ -79,11 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Extend fade-in to contact and footer sections
+// Extend fade-in to lower sections (exclude footer here)
 document.addEventListener("DOMContentLoaded", () => {
   const targets = [
     '#contact .contact__inner',
-    '.site-footer .footer__inner',
     '.section'
   ];
   targets.forEach((selector) => {
@@ -100,5 +99,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+  });
+});
+
+// Footer fade-in (separate animation to avoid staying hidden before scroll)
+document.addEventListener("DOMContentLoaded", () => {
+  const footerEl = document.querySelector('footer.site-footer');
+  if (!footerEl) return;
+  gsap.from(footerEl, {
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+    ease: 'power2.out',
+    scrollTrigger: {
+      trigger: footerEl,
+      start: 'top 90%'
+    },
+    immediateRender: false
   });
 });
