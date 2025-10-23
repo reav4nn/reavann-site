@@ -1,4 +1,4 @@
-// ------- Osmo [https://osmo.supply/] ------- //
+﻿// ------- Osmo [https://osmo.supply/] ------- //
 
 document.addEventListener("DOMContentLoaded", () => {
 	// Register GSAP Plugins
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     status.hidden = false;
-    status.textContent = 'Sending…';
+    status.textContent = 'Sending...';
 
     try {
       const formData = new FormData(form);
@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
         body: formData
       });
       if (res.ok) {
-        status.textContent = 'Message sent successfully ✅';
+        status.textContent = 'Message sent successfully';
         form.reset();
       } else {
-        status.textContent = 'Failed to send message ❌ Please try again.';
+        status.textContent = 'Failed to send message. Please try again.';
       }
     } catch (err) {
-      status.textContent = 'Failed to send message ❌ Please try again.';
+      status.textContent = 'Failed to send message. Please try again.';
     }
   });
 });
@@ -118,3 +118,5 @@ document.addEventListener("DOMContentLoaded", () => {
     immediateRender: false
   });
 });
+
+
